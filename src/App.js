@@ -1,9 +1,12 @@
+import React, { Component } from "react";
 
 import "./App.css";
 import Modal from "./components/Modal/Modal";
 import Backdrop from "./components/Backdrop/Backdrop";
-import List from "./components/List/List';
-function App (){
+import List from "./components/List/List";
+
+class App extends Component {
+  render() {
     return (
       <div className="App">
         <h1>React Animations</h1>
@@ -14,6 +17,7 @@ function App (){
         <List />
       </div>
     );
- }
+  }
+}
 
 export default App;
