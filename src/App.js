@@ -6,11 +6,17 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import List from "./components/List/List";
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+       showModal: false, 
+    }
+  }
   render() {
     return (
       <div className="App">
         <h1>React Animations</h1>
-        <Modal />
+       {this.state.showModal && <Modal /> }
         <Backdrop />
         <button className="Button">Open Modal</button>
         <h3>Animating Lists</h3>
