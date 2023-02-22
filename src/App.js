@@ -25,7 +25,7 @@ class App extends Component {
        {this.state.showModal && <Backdrop /> }
         <button 
           className="Button"
-          onClick={showModalHandler}
+          onClick={this.showModalHandler}
           >Open Modal</button>
         <h3>Animating Lists</h3>
         <List />
