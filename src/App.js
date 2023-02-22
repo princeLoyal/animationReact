@@ -14,7 +14,7 @@ class App extends Component {
   }
   showModalHandler(){
    this.setState({
-      showModal: false
+      showModal: true
    })
   }
   render() {
