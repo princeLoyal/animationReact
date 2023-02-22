@@ -12,12 +12,17 @@ class App extends Component {
        showModal: false, 
     }
   }
+  showModalHandler(){
+   this.setState({
+      showModal: false
+   })
+  }
   render() {
     return (
       <div className="App">
         <h1>React Animations</h1>
-       {this.state.showModal && <Modal /> }
-        <Backdrop />
+       {this.state.showModal && <Modal show={this.state.showModal}/> }
+       {this.state.showModal && <Backdrop /> }
         <button className="Button">Open Modal</button>
         <h3>Animating Lists</h3>
         <List />
